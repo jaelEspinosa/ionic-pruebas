@@ -5,6 +5,10 @@
     </ion-buttons>
     <ion-title>customers</ion-title>
   </ion-toolbar>
+
+  <ion-toolbar color="mycolor">
+    <ion-searchbar class="input" placeholder="Buscar" animated (keyup)="searchCustomer($event)"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -13,7 +17,7 @@
        Contactos
      </ion-list-header>
 
-     <ion-item *ngFor="let item of customers">
+     <ion-item *ngFor="let item of searchedUser">
       <ion-avatar slot="start">
         <img src="../../assets/customers-img/{{item.image}}" alt="avatar">
       </ion-avatar>
