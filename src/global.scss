@@ -24,3 +24,23 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+.btn{
+  margin:5px;
+  background-color: var(--ion-color-mycolor);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px gray;
+  font-size: 20px;
+
+}
+
+.container{
+   text-align: center;
+   position: absolute;
+   left: 20px;
+   right: 20px;
+   top: 95%;
+   transform: translateY(-95%);
+  }
