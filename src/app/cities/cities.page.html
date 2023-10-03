@@ -10,10 +10,11 @@
 <ion-content [fullscreen]="true">
   <ion-row>
     <ion-col sizeLg="4" sizeMd="6" sizeXs="12" *ngFor="let city of cities" >
-      <ion-card >
+      <ion-card (click)="presentToast1()" >
         <img src="../../assets/cities-img/{{city.image}}" alt="img-city">
         <div class="card-title">{{city.name}}</div>
       </ion-card>
+      <button class="btn-sm" (click)="presentAlert2()">Borrar</button>
     </ion-col>
   </ion-row>
 </ion-content>

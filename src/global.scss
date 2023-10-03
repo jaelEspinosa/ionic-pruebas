@@ -36,6 +36,14 @@
 
 }
 
+.btn-sm{
+  background-color: var(--ion-color-mycolor);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px gray;
+}
+
 .container{
    text-align: center;
    position: absolute;
