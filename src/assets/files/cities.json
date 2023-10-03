@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "Alicante",
+      "image": "alicante.jpg"
+    },
+    {
+      "name": "Barcelona",
+      "image": "barcelona.jpg"
+    },
+    {
+      "name": "Sevilla",
+      "image": "sevilla.jpg"
+    },
+    {
+      "name": "Madrid",
+      "image": "madrid.jpeg"
+    },
+    {
+      "name": "Santander",
+      "image": "santander.jpg"
+    },
+    {
+      "name": "Bilbao",
+      "image": "bilbao.jpeg"
+    }
+  ]
+}

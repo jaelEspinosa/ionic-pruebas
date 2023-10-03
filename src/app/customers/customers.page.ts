@@ -2,7 +2,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { CustomersService } from './services/customers.service';
-import { Users } from '../interfaces/users-interface';
+import { User } from '../interfaces/users-interface';
 
 @Component({
   selector: 'app-customers',
@@ -14,7 +14,9 @@ export class CustomersPage implements OnInit {
 
 private router = inject( Router )
 private customersService = inject ( CustomersService )
-public customers : Users[] = []
+
+public customers : User[] = []
+
 
 ngOnInit() {
     this.getAllCustomers()
@@ -26,7 +28,7 @@ ngOnInit() {
     .subscribe ({
       next: res => {
         this.customers = res
-        console.log( this.customers )
+
       }
     })
 }
