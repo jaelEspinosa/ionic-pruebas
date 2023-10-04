@@ -1,0 +1,16 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar color="mycolor" *ngIf="cityToShow">
+      <ion-title size="large">{{cityToShow.name}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngIf="cityToShow">
+    <img src="../../assets/cities-img/{{cityToShow.image}}" alt="">
+    <div class="desc">{{cityToShow.desc}}</div>
+  </ion-card>
+
+  <button [routerLink]="['/cities']" class="btn" type="buton">Volver</button>
+</ion-content>

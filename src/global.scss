@@ -27,7 +27,7 @@
 
 
 .btn{
-  margin:5px;
+  margin:10px;
   background-color: var(--ion-color-mycolor);
   padding: 15px 20px;
   border-radius: 8px;
@@ -37,6 +37,7 @@
 }
 
 .btn-sm{
+  margin:10px;
   background-color: var(--ion-color-mycolor);
   font-size: 12px;
   padding: 5px 10px;
@@ -49,6 +50,6 @@
    position: absolute;
    left: 20px;
    right: 20px;
-   top: 95%;
-   transform: translateY(-95%);
+   top: 90%;
+   /* transform: translateY(-90%); */
   }

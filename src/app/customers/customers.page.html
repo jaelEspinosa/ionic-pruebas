@@ -12,30 +12,29 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-     <ion-list-header>
-       Contactos
-     </ion-list-header>
-
-     <ion-item *ngFor="let item of searchedUser">
-      <ion-avatar slot="start">
-        <img src="../../assets/customers-img/{{item.image}}" alt="avatar">
-      </ion-avatar>
-      <ion-avatar slot="end">
-        <ion-icon name="search-outline"></ion-icon>
-      </ion-avatar>
-      <ion-label>
-        <h2>{{item.name | titlecase}}</h2>
-        <h3>{{item.state}}</h3>
-        <p>{{item.description}}</p>
-      </ion-label>
-     </ion-item>
 
 
+    <ion-list class="list">
+       <ion-list-header>
+         Contactos
+       </ion-list-header>
+
+       <ion-item *ngFor="let item of searchedUser">
+        <ion-avatar slot="start">
+          <img src="../../assets/customers-img/{{item.image}}" alt="avatar">
+        </ion-avatar>
+        <ion-avatar slot="end">
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{item.name | titlecase}}</h2>
+          <h3>{{item.state}}</h3>
+          <p>{{item.description}}</p>
+        </ion-label>
+       </ion-item>
+    </ion-list>
 
 
-
-  </ion-list>
   <div class="container">
     <button class="btn" (click)="goToHome()">Go to Home</button>
   </div>

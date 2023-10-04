@@ -1,7 +1,14 @@
 ion-toolbar{
-  background-color: var(--ion-color-mycolor)
+  background-color: var(--ion-color-mycolor);
+  padding-bottom: 20px;
 }
 
 
 
+
+.list{
+  background-color: var(--ion-color-mycolor-tint);
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+}
 

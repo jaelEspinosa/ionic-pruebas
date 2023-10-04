@@ -3,29 +3,38 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>home</ion-title>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="medium">
 
   <ion-grid>
-    <ion-row>
-      <ion-col sizeLg="4" sizeMd="6" sizeXs="9">
-        <div class="texto">texto-1</div>
+    <ion-row class="rowTitle">
+      <ion-col sizeLg="4" sizeMd="6" sizeXs="6">
+        <div class="texto">App de prueba</div>
       </ion-col>
-      <ion-col sizeLg="4" sizeMd="6" sizeXs="3">
-        <div class="texto">texto-1</div>
+      <ion-col sizeLg="4" sizeMd="6" sizeXs="6">
+        <div class="texto">Ionic & Angular</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMd="6" sizeXs="5">
+        <div>
+          <img class="imageApp" src="../../assets/app-img/ionic-logo.png" alt="">
+        </div>
+      </ion-col>
+      <ion-col  sizeLg="4" sizeMd="6" sizeXs="2">
+        <div class="flex">
+          <img  class="imageApp" src="../../assets/app-img/images.png" alt="">
+        </div>
+      </ion-col>
+      <ion-col sizeLg="4" sizeMd="6" sizeXs="5">
+        <div >
+          <img class="imageApp" src="../../assets/app-img/Angular_full_color_logo.svg.png" alt="">
+        </div>
       </ion-col>
     </ion-row>
 
-    <ion-row>
-      <ion-col sizeLg="4" sizeMd="6" sizeXs="8">
-        <div class="texto">texto-1</div>
-      </ion-col>
-      <ion-col sizeLg="4" sizeMd="6" sizeXs="4">
-        <div class="texto">texto-1</div>
-      </ion-col>
-    </ion-row>
+
   </ion-grid>
 </ion-content>

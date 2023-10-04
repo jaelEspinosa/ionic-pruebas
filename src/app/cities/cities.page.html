@@ -13,6 +13,10 @@
       <ion-card (click)="presentToast1()" >
         <img src="../../assets/cities-img/{{city.image}}" alt="img-city">
         <div class="card-title">{{city.name}}</div>
+        <div class="ver">
+          <a class="ver" [routerLink]="['/city/',city.id]">ver</a>
+        </div>
+
       </ion-card>
       <button class="btn-sm" (click)="presentAlert2()">Borrar</button>
     </ion-col>
